@@ -4,13 +4,14 @@
 [ext_resource type="Script" uid="uid://bdgehtarmiynf" path="res://scripts/characters/player.gd" id="1_t61fv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
-size = Vector2(45, 12.5)
+size = Vector2(59, 12.5)
 
 [node name="Player" type="CharacterBody2D" unique_id=332779643]
 script = ExtResource("1_t61fv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1579106043]
-position = Vector2(110, 170)
+use_parent_material = true
+position = Vector2(109.5, 170)
 shape = SubResource("RectangleShape2D_xrivr")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=768059828]
