@@ -1,15 +1,12 @@
 [gd_scene format=3 uid="uid://c5n783ixnbupp"]
 
-[ext_resource type="PackedScene" uid="uid://b6jni6qah2mg7" path="res://scenes/characters/player/player.tscn" id="1_hyk8p"]
+[ext_resource type="PackedScene" uid="uid://dbcq3n801oj2c" path="res://scenes/characters/player/player.tscn" id="1_hyk8p"]
 [ext_resource type="PackedScene" uid="uid://cdt7a2uk6mr3q" path="res://scenes/maps/first_clearing.tscn" id="2_iuonh"]
 
 [node name="Main" type="Node2D" unique_id=123609209]
 
-[node name="Player" parent="." unique_id=178966397 instance=ExtResource("1_hyk8p")]
-position = Vector2(200, 300)
-up_direction = Vector2(0.003999968, 0.999992)
-platform_wall_layers = 1
-
 [node name="World" type="Node2D" parent="." unique_id=159060630]
 
 [node name="FirstClearing" parent="World" unique_id=1143882452 instance=ExtResource("2_iuonh")]
+
+[node name="Player" parent="." unique_id=821997145 instance=ExtResource("1_hyk8p")]

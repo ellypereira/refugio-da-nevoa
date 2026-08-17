@@ -1,30 +1,18 @@
-[gd_scene format=3 uid="uid://b6jni6qah2mg7"]
+[gd_scene format=3 uid="uid://dbcq3n801oj2c"]
 
 [ext_resource type="Texture2D" uid="uid://cibwaa21ugqic" path="res://icon.svg" id="1_7uws0"]
-[ext_resource type="Script" uid="uid://bdgehtarmiynf" path="res://scripts/characters/player.gd" id="1_t61fv"]
+[ext_resource type="Script" uid="uid://bvep5mfdm37p4" path="res://script/characters/player.gd" id="1_t61fv"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
-size = Vector2(59, 12.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13qdw"]
 
-[node name="Player" type="CharacterBody2D" unique_id=332779643]
+[node name="Player" type="CharacterBody2D" unique_id=821997145]
 script = ExtResource("1_t61fv")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1579106043]
-use_parent_material = true
-position = Vector2(109.5, 170)
-shape = SubResource("RectangleShape2D_xrivr")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=768059828]
-position = Vector2(109, 142)
-position_smoothing_enabled = true
-position_smoothing_speed = 6.0
-
-[node name="Visuals" type="Node" parent="." unique_id=1583344760]
-
-[node name="Sprite2D" type="Sprite2D" parent="Visuals" unique_id=1474661803]
-position = Vector2(110, 130)
-scale = Vector2(0.4296875, 0.48525)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=536978920]
 texture = ExtResource("1_7uws0")
 
-[node name="InteractionPoint" type="Marker2D" parent="." unique_id=1198027700]
-position = Vector2(140, 163)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1891953135]
+position = Vector2(0, 77)
+shape = SubResource("RectangleShape2D_13qdw")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1145708290]
