@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://djv62x8tl157m"]
+
+[ext_resource type="Script" uid="uid://bt3gig0kf3gui" path="res://script/ui/InventoryUI.gd" id="1_7nagc"]
+
+[node name="InventoryUI" type="CanvasLayer" unique_id=1987723928 groups=["InventoryUI"]]
+script = ExtResource("1_7nagc")
+
+[node name="Panel" type="Panel" parent="." unique_id=867396472]
+offset_left = 30.0
+offset_top = 100.0
+offset_right = 330.0
+offset_bottom = 520.0
+
+[node name="ItemsContainer" type="VBoxContainer" parent="Panel" unique_id=729449660]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 52.0
+offset_right = 278.0
+offset_bottom = 372.0
+
+[node name="TitleLabel" type="Label" parent="Panel" unique_id=1408037649]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 12.0
+offset_right = 202.0
+offset_bottom = 44.0
+text = "INVENTÁRIO"

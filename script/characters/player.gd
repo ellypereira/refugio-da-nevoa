@@ -6,10 +6,16 @@ extends CharacterBody2D
 
 
 func _physics_process(_delta: float) -> void:
+	
 	var dialogue_ui = get_tree().get_first_node_in_group("dialogue_ui")
-
+	var InventoryUI = get_tree().get_first_node_in_group("InventoryUI")
 	# Enquanto houver diálogo, o personagem fica parado.
 	if dialogue_ui and dialogue_ui.is_open:
+		velocity = Vector2.ZERO
+		move_and_slide()
+		return
+		
+	if InventoryUI and InventoryUI.is_open:
 		velocity = Vector2.ZERO
 		move_and_slide()
 		return

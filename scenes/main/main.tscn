@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cdt7a2uk6mr3q" path="res://scenes/maps/first_clearing.tscn" id="2_iuonh"]
 [ext_resource type="PackedScene" uid="uid://c0a1fgf7rpd31" path="res://scenes/ui/dialogue_ui.tscn" id="3_k2fmo"]
 [ext_resource type="PackedScene" uid="uid://cp8bxaupis365" path="res://scenes/objects/test_sign.tscn" id="4_l3cfh"]
+[ext_resource type="PackedScene" uid="uid://djv62x8tl157m" path="res://scenes/ui/inventory_ui.tscn" id="5_6q06x"]
 
 [node name="Main" type="Node2D" unique_id=123609209]
 position = Vector2(-192, -40)
@@ -21,3 +22,5 @@ position = Vector2(504, 1264)
 
 [node name="TestSign" parent="." unique_id=1544521357 instance=ExtResource("4_l3cfh")]
 position = Vector2(351, 395)
+
+[node name="InventoryUI" parent="." unique_id=1987723928 instance=ExtResource("5_6q06x")]

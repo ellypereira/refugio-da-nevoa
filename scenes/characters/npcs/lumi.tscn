@@ -1,14 +1,13 @@
 [gd_scene format=3 uid="uid://djhsul33pfsnt"]
 
 [ext_resource type="Script" uid="uid://rjox3q71k14y" path="res://scenes/characters/npcs/npc_base.gd" id="1_4dd03"]
+[ext_resource type="Texture2D" uid="uid://bb7i7pob0etrc" path="res://assets/sprites/characters/npcs/lumi/lumi_idle.png" id="2_o02e2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
 size = Vector2(18, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_13qdw"]
 size = Vector2(48, 40)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_xrivr"]
 
 [node name="Lumi" type="CharacterBody2D" unique_id=1715847530]
 script = ExtResource("1_4dd03")
@@ -26,5 +25,8 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=355929040]
 shape = SubResource("RectangleShape2D_13qdw")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1279382428]
-sprite_frames = SubResource("SpriteFrames_xrivr")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1571002559]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_o02e2")
+region_enabled = true
+region_rect = Rect2(209.04114, 112.05451, 155.69763, 203.59006)
