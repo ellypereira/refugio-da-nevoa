@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c0a1fgf7rpd31"]
+
+[ext_resource type="Script" uid="uid://bkip5i3abu8fn" path="res://scenes/ui/dialogue_ui.gd" id="1_y3syv"]
+
+[node name="DialogueUI" type="CanvasLayer" unique_id=1509786841 groups=["dialogue_ui"]]
+script = ExtResource("1_y3syv")
+
+[node name="Panel" type="Panel" parent="." unique_id=1087010598]
+offset_left = 16.0
+offset_top = 480.0
+offset_right = 344.0
+offset_bottom = 620.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=795817141]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 316.0
+offset_bottom = 128.0
+text = "A névoa fica mais densa adiante...
+
+Talvez seja melhor seguir pela trilha."
+autowrap_mode = 3
+
+[node name="ContinueLabel" type="Label" parent="Panel" unique_id=188966211]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 100.0
+offset_right = 340.0
+offset_bottom = 125.0
+text = "[E] "
+vertical_alignment = 2
+
+[node name="NameLabel" type="Label" parent="Panel" unique_id=1478234328]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Lumi"

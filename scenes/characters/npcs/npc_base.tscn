@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bu0soqvpmdk0p"]
+
+[ext_resource type="Script" uid="uid://rjox3q71k14y" path="res://scenes/characters/npcs/npc_base.gd" id="1_rmaih"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(18, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13qdw"]
+size = Vector2(48, 40)
+
+[node name="Lumi" type="CharacterBody2D" unique_id=1715847530]
+script = ExtResource("1_rmaih")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1751494317]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=744908735]
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=659889352]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=355929040]
+shape = SubResource("RectangleShape2D_13qdw")
