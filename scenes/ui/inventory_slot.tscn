@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cxekaangpr07d"]
+
+[ext_resource type="Script" uid="uid://c88is64iu4bg7" path="res://script/ui/inventory_slot.gd" id="1_kscix"]
+[ext_resource type="Texture2D" uid="uid://bom3eiedagfge" path="res://assets/sprites/items/icons/luz_da_nevoa.png" id="2_ru537"]
+
+[node name="InventorySlot" type="PanelContainer" unique_id=1059657181]
+custom_minimum_size = Vector2(260, 56)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_kscix")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1760766726]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="HBoxContainer" unique_id=398606756]
+layout_mode = 2
+text = "Luz da Névoa"
+
+[node name="AmountLabel" type="Label" parent="HBoxContainer" unique_id=757337988]
+layout_mode = 2
+text = "X1"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=101479577]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("2_ru537")
+expand_mode = 1
+stretch_mode = 5

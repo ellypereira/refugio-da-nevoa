@@ -4,6 +4,9 @@ extends CanvasLayer
 @onready var panel: Panel = $Panel
 @onready var items_container: VBoxContainer = $Panel/ItemsContainer
 
+var inventory_slot_scene = preload("res://scenes/ui/inventory_slot.tscn")
+
+
 var is_open: bool = false
 
 
@@ -31,16 +34,19 @@ func update_inventory() -> void:
 	for child in items_container.get_children():
 		child.queue_free()
 
+	# Inventário vazio.
 	if InventoryManager.items.is_empty():
 		var empty_label := Label.new()
 		empty_label.text = "Inventário vazio."
 		items_container.add_child(empty_label)
 		return
 
+	# Cria um InventorySlot para cada item.
 	for item_name in InventoryManager.items:
 		var amount: int = InventoryManager.items[item_name]
 
-		var item_label := Label.new()
-		item_label.text = item_name + "   x" + str(amount)
+		var slot = inventory_slot_scene.instantiate()
 
-		items_container.add_child(item_label)
+		items_container.add_child(slot)
+
+		slot.setup(item_name, amount)
