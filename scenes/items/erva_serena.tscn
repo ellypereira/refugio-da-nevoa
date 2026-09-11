@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://coi4runef4v65"]
+[gd_scene format=3 uid="uid://dfukvgv4jv2uu"]
 
 [ext_resource type="Script" uid="uid://dbkeehmiof024" path="res://script/items/collectible_item.gd" id="1_d6gmi"]
-[ext_resource type="Texture2D" uid="uid://bom3eiedagfge" path="res://assets/sprites/items/icons/luz_da_nevoa.png" id="2_fnu1h"]
+[ext_resource type="Texture2D" uid="uid://cbhjdnweowph" path="res://assets/sprites/items/icons/erva_serena.png" id="3_s7poj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xrivr"]
 
@@ -9,12 +9,13 @@
 collision_layer = 2
 collision_mask = 0
 script = ExtResource("1_d6gmi")
+item_name = "Erva Serena"
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1634671682]
-position = Vector2(-9.903082, -7.999999)
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=419735358]
+position = Vector2(72, 56)
 scale = Vector2(0.029016342, 0.02507837)
-texture = ExtResource("2_fnu1h")
+texture = ExtResource("3_s7poj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=585724221]
-position = Vector2(-8, -8)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2043491233]
+position = Vector2(72, 56)
 shape = SubResource("CircleShape2D_xrivr")

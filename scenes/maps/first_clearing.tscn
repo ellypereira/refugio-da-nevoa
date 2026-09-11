@@ -2,7 +2,8 @@
 
 [ext_resource type="TileSet" uid="uid://6uutrr5a1ctn" path="res://resources/tilesets/first_clearing_tileset.tres" id="1_2ks3i"]
 [ext_resource type="PackedScene" uid="uid://djhsul33pfsnt" path="res://scenes/characters/npcs/lumi.tscn" id="2_pghlr"]
-[ext_resource type="PackedScene" uid="uid://do508fanlf3ph" path="res://scenes/items/collectible_item.tscn" id="3_6yn2t"]
+[ext_resource type="PackedScene" uid="uid://dfukvgv4jv2uu" path="res://scenes/items/erva_serena.tscn" id="4_rt8sg"]
+[ext_resource type="PackedScene" uid="uid://ccdm2bdservro" path="res://scenes/items/luz_da_nevoa.tscn" id="5_w16d4"]
 
 [node name="FirstClearing" type="Node2D" unique_id=1143882452]
 
@@ -15,5 +16,11 @@ tile_set = ExtResource("1_2ks3i")
 [node name="Lumi" parent="." unique_id=1715847530 instance=ExtResource("2_pghlr")]
 position = Vector2(24, 920)
 
-[node name="CollectibleItem" parent="." unique_id=749785010 instance=ExtResource("3_6yn2t")]
-position = Vector2(208, 1016)
+[node name="CollectibleItem2" parent="." unique_id=160971005 instance=ExtResource("4_rt8sg")]
+position = Vector2(120, 960)
+
+[node name="CollectibleItem4" parent="." unique_id=749785010 instance=ExtResource("4_rt8sg")]
+position = Vector2(208, 936)
+
+[node name="CollectibleItem3" parent="." unique_id=204265150 instance=ExtResource("5_w16d4")]
+position = Vector2(248, 896)

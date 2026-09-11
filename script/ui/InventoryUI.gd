@@ -3,7 +3,7 @@ extends CanvasLayer
 
 @onready var panel: Panel = $Panel
 @onready var items_container: VBoxContainer = $Panel/ItemsContainer
-
+@onready var description_label: Label = $Panel/DescriptionLabel
 var inventory_slot_scene = preload("res://scenes/ui/inventory_slot.tscn")
 
 
@@ -29,7 +29,6 @@ func toggle_inventory() -> void:
 	else:
 		panel.hide()
 
-
 func update_inventory() -> void:
 	for child in items_container.get_children():
 		child.queue_free()
@@ -50,3 +49,13 @@ func update_inventory() -> void:
 		items_container.add_child(slot)
 
 		slot.setup(item_name, amount)
+		slot.item_hovered.connect(_on_item_hovered)
+		
+func _on_item_hovered(item_name: String) -> void:
+	var item_data: Dictionary = ItemDatabase.get_item(item_name)
+
+	if item_data.is_empty():
+		description_label.text = "Item desconhecido."
+		return
+
+	description_label.text = item_data["description"]

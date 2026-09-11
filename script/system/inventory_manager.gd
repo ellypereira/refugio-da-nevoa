@@ -20,3 +20,17 @@ func has_item(item_name: String, amount: int = 1) -> bool:
 
 func get_item_amount(item_name: String) -> int:
 	return items.get(item_name, 0)
+
+func remove_item(item_name: String, amount: int = 1) -> bool:
+	if not items.has(item_name):
+		return false
+
+	if items[item_name] < amount:
+		return false
+
+	items[item_name] -= amount
+
+	if items[item_name] <= 0:
+		items.erase(item_name)
+
+	return true

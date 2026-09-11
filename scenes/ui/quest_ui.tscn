@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dq6qvdk43gp3y"]
+
+[ext_resource type="Script" uid="uid://dex7cyl018ye" path="res://scenes/ui/quest_ui.gd" id="1_0nwrp"]
+
+[node name="QuestUI" type="CanvasLayer" unique_id=1878747442]
+script = ExtResource("1_0nwrp")
+
+[node name="Panel" type="Panel" parent="." unique_id=2093331814]
+anchors_preset = -1
+anchor_left = 0.14400001
+anchor_right = 0.14400001
+offset_left = -51.840004
+offset_top = -56.0
+offset_right = 52.159996
+offset_bottom = 64.0
+
+[node name="QuestNameLabel" type="Label" parent="Panel" unique_id=732222354]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 49.0
+text = "Ervas para Lumi
+"
+
+[node name="ObjectiveLabel" type="Label" parent="Panel" unique_id=674312730]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 133.0
+offset_bottom = 81.0
+text = "Erva Serena: 1 / 2
+"
+
+[node name="StatusLabel" type="Label" parent="Panel" unique_id=622404009]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 177.0
+offset_bottom = 87.0
+text = "Missão em andamento"

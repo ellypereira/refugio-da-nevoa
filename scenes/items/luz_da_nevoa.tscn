@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ccdm2bdservro"]
+
+[ext_resource type="Script" uid="uid://dbkeehmiof024" path="res://script/items/collectible_item.gd" id="1_e8row"]
+[ext_resource type="Texture2D" uid="uid://bom3eiedagfge" path="res://assets/sprites/items/icons/luz_da_nevoa.png" id="2_idesw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xrivr"]
+
+[node name="CollectibleItem" type="Area2D" unique_id=749785010]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_e8row")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1634671682]
+position = Vector2(-9.903082, -7.999999)
+scale = Vector2(0.029016342, 0.02507837)
+texture = ExtResource("2_idesw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=585724221]
+position = Vector2(-8, -8)
+shape = SubResource("CircleShape2D_xrivr")

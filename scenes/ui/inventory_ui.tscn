@@ -25,3 +25,15 @@ offset_top = 12.0
 offset_right = 202.0
 offset_bottom = 44.0
 text = "INVENTÁRIO"
+
+[node name="DescriptionLabel" type="Label" parent="Panel" unique_id=1986611041]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 252.0
+offset_right = 282.0
+offset_bottom = 396.0
+text = "Selecione um item para ver sua descrição."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true

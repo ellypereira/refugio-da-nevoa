@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 InventoryManager="*uid://bxg2qix43rhkb"
+ItemDatabase="*uid://cg82er4pp1l8f"
+QuestManager="*uid://cg3ws2afkr8ea"
 
 [display]
 

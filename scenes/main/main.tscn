@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dbcq3n801oj2c" path="res://scenes/characters/player/player.tscn" id="1_hyk8p"]
 [ext_resource type="PackedScene" uid="uid://cdt7a2uk6mr3q" path="res://scenes/maps/first_clearing.tscn" id="2_iuonh"]
+[ext_resource type="PackedScene" uid="uid://dq6qvdk43gp3y" path="res://scenes/ui/quest_ui.tscn" id="2_ow5a4"]
 [ext_resource type="PackedScene" uid="uid://c0a1fgf7rpd31" path="res://scenes/ui/dialogue_ui.tscn" id="3_k2fmo"]
 [ext_resource type="PackedScene" uid="uid://cp8bxaupis365" path="res://scenes/objects/test_sign.tscn" id="4_l3cfh"]
 [ext_resource type="PackedScene" uid="uid://djv62x8tl157m" path="res://scenes/ui/inventory_ui.tscn" id="5_6q06x"]
@@ -12,15 +13,17 @@ position = Vector2(-192, -40)
 [node name="World" type="Node2D" parent="." unique_id=159060630]
 position = Vector2(16, 152)
 
-[node name="FirstClearing" parent="World" unique_id=1143882452 instance=ExtResource("2_iuonh")]
-position = Vector2(424, -16)
+[node name="FirstClearing" parent="." unique_id=1143882452 instance=ExtResource("2_iuonh")]
+position = Vector2(440, 136)
 
-[node name="Player" parent="." unique_id=821997145 instance=ExtResource("1_hyk8p")]
-position = Vector2(504, 1264)
+[node name="QuestUI" parent="." unique_id=1878747442 instance=ExtResource("2_ow5a4")]
 
-[node name="DialogueUI" parent="." unique_id=1509786841 instance=ExtResource("3_k2fmo")]
+[node name="InventoryUI" parent="." unique_id=1987723928 instance=ExtResource("5_6q06x")]
 
 [node name="TestSign" parent="." unique_id=1544521357 instance=ExtResource("4_l3cfh")]
 position = Vector2(351, 395)
 
-[node name="InventoryUI" parent="." unique_id=1987723928 instance=ExtResource("5_6q06x")]
+[node name="DialogueUI" parent="." unique_id=1509786841 instance=ExtResource("3_k2fmo")]
+
+[node name="Player" parent="." unique_id=821997145 instance=ExtResource("1_hyk8p")]
+position = Vector2(504, 1264)
