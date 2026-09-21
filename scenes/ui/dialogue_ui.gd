@@ -4,6 +4,7 @@ extends CanvasLayer
 @onready var label: Label = $Panel/Label
 @onready var continue_label: Label = $Panel/ContinueLabel
 @onready var name_label: Label = $Panel/NameLabel
+signal dialogue_closed
 
 # Falas do diálogo atual
 var dialogue_lines: Array[String] = []
@@ -124,5 +125,6 @@ func close_dialogue() -> void:
 
 	continue_label.hide()
 	name_label.hide()
-
 	continue_label.modulate.a = 1.0
+	
+	dialogue_closed.emit()

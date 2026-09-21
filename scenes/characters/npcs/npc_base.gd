@@ -32,16 +32,19 @@ func interact() -> void:
 
 
 	if quest_state == "not_started":
-		QuestManager.start_quest("erva_para_lumi")
-
 		var lines: Array[String] = [
-			"Oi... você poderia me ajudar?",
-			"Algumas Ervas Serena crescem por esta clareira.",
-			"Traga 2 delas para mim."
-		]
+		"Oi... você poderia me ajudar?",
+		"Algumas Ervas Serena crescem por esta clareira.",
+        "Traga 2 delas para mim."
+	]
 
+		dialogue_ui.dialogue_closed.connect(
+		func():
+			QuestManager.start_quest("erva_para_lumi")
+	, CONNECT_ONE_SHOT)
+		
 		dialogue_ui.start_dialogue(lines, npc_name)
-		return
+	return
 
 
 	if quest_state == "active":
